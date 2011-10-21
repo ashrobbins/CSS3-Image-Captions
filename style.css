@@ -1,0 +1,83 @@
+body {
+    font-family:Arial, Helvetica, sans;
+}
+.image, .image2, .image3, .image4, img {
+    width:362px;
+}
+#figure, #figure2, #figure3, #figure4 {
+    position:relative;
+    overflow:hidden;
+}
+.caption, .caption2, .caption3, .caption4 {
+    width:342px;
+    height:40px;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:bold;
+    background:#333333;
+    margin:0;
+    padding:10px;
+}
+.caption {
+    position:absolute;
+    bottom:-100px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#figure:hover .caption {
+    bottom:0px;
+}
+.caption2 {
+    position:absolute;
+    bottom:0px;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity:0;
+    filter: alpha(opacity = 0);
+    -moz-opacity:0;
+}
+#figure2:hover .caption2 {
+    opacity:1;
+    filter: alpha(opacity = 1);
+    -moz-opacity:1;
+}
+.caption3 {
+    position:absolute;
+    bottom:0px;
+    left:-400px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#figure3:hover .caption3 {
+    left:0px;
+}
+.caption4 {
+    position:absolute;
+    bottom:0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin:0 0;
+    -moz-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    -transform-origin:0 0;
+}
+#figure4:hover .caption4 {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
